@@ -7,7 +7,7 @@ import XMonad.Util.NamedScratchpad
 import qualified XMonad.StackSet as W
 
 -- General config
-myTerminal    = "kitty"
+myTerminal    = "urxvt"
 myBrowser     = "qutebrowser"
 myEditor      = "emacsclient -c"
 myMenu        = "rofi -modi drun -show drun"

@@ -32,7 +32,7 @@ main = do
   -- set keyboard to dvorak
   -- spawn "setxkbmap us dvorak ctrl:nocaps"
   -- generate wallpaper
-  spawn "archur -o ~/.cache/wallpaper.jpg -t inverted -bg black -r 3840x2160"
+  -- spawn "archur -o ~/.cache/wallpaper.jpg -t inverted -bg black -r 3840x2160"
   -- set wallpaper
   spawn "feh --bg-scale ~/.cache/wallpaper.jpg"
   -- terminal daemon

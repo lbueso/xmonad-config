@@ -16,6 +16,7 @@ myKeys = \conf -> mkKeymap conf $
   [ ("M4-<Return>", spawn myTerminal)
   , ("M4-S-g",      spawn myBrowser)
   , ("M4-d",        spawn myMenu)
+  , ("M4-p",        spawn "rofi-pass")
   , ("M4-S-e",      spawn myEditor)
   , ("M4-S-t",      spawn "emacsclient -server-file=telega -cne '(telega t)'")
   , ("M4-S-m",      spawn "emacsclient -server-file=mail -cne '(mu4e)'")
@@ -30,8 +31,8 @@ myKeys = \conf -> mkKeymap conf $
   , ("M4-<Tab>",   windows W.focusDown)
   , ("M4-o",       windows W.focusDown)
   , ("M4-S-<Tab>", windows W.focusUp)
-  , ("M4-n",       windows W.focusDown)
-  , ("M4-p",       windows W.focusUp)
+  -- , ("M4-n",       windows W.focusDown)
+  -- , ("M4-p",       windows W.focusUp)
   -- modify the window order
   , ("M4-m",   windows W.swapMaster)
   , ("M4-S-n", windows W.swapDown)
