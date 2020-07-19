@@ -29,6 +29,8 @@ getEnvVar env defaultVar = do
   return $ fromMaybe defaultVar var
 
 main = do
+  -- setup wallpaper
+  spawn "feh --bg-scale --randomize ~/.cache/wallpaper/*"
   -- terminal daemon
   spawn "urxvtd"
   -- set status bar
