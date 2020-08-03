@@ -56,8 +56,8 @@ myKeys = \conf -> mkKeymap conf $
   -- , ("M4-S-=", spawn "light -A 10") -- S-= equals + in Dvorak layout
   -- , ("M4--",   spawn "light -U 10")
   -- volume keys
-  , ("<XF86AudioRaiseVolume>", spawn "amixer -D pulse sset Master 5%+")
-  , ("<XF86AudioLowerVolume>", spawn "amixer -D pulse sset Master 5%-")
+  , ("<XF86AudioRaiseVolume>", spawn "pulsemixer --change-volume +2")
+  , ("<XF86AudioLowerVolume>", spawn "pulsemixer --change-volume -2")
   -- TODO screenshots
   -- lampe hue lights
   , ("M4-<F11>", spawn "lampe -s Y") -- switch on lights
